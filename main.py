@@ -14,6 +14,3 @@ for file in todo:
     composer.append(docfile)
 
 composer.save(os.path.abspath("")+"\docxfiles\combined.docx")
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
