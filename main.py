@@ -1,9 +1,11 @@
 from docxcompose.composer import Composer
 from docx import Document
+from natsort import natsorted
 import os
+
 todo = os.listdir(os.path.abspath("")+"\docxfiles")
 
-todo.sort()
+todo = natsorted(todo)
 
 master = Document()
 composer = Composer(master)
